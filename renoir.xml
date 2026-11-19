@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="wannqn1" fetch="https://github.com/wannqn1/" />
+
+  <project path="device/xiaomi/renoir" name="android_device_xiaomi_renoir" remote="wannqn1" revision="refs/heads/renoir-6.18" clone-depth="1" />
+  <project path="device/xiaomi/sm8350-common" name="android_device_xiaomi_sm8350-common" remote="wannqn1" revision="refs/heads/renoir-6.18" clone-depth="1" />
+  <project path="device/xiaomi/renoir-kernel-6.18" name="android_device_xiaomi_renoir-kernel-6.18" remote="wannqn1" revision="refs/heads/renoir-6.18" clone-depth="1" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="wannqn1" revision="refs/heads/lineage-24.0" clone-depth="1" />
+  <project path="vendor/xiaomi/renoir" name="proprietary_vendor_xiaomi_renoir" remote="wannqn1" revision="refs/heads/lineage-24.0" clone-depth="1" />
+  <project path="vendor/xiaomi/sm8350-common" name="proprietary_vendor_xiaomi_sm8350-common" remote="wannqn1" revision="refs/heads/lineage-24.0" clone-depth="1" />
+</manifest>
