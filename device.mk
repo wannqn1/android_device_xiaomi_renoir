@@ -25,6 +25,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.miui.notch=1 \
     ro.product.mod_device=renoir_global
 
+# Kernel
+PRODUCT_COPY_FILES += device/xiaomi/renoir-kernel-6.18/Image:kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
