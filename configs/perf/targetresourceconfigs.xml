@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Copyright (c) 2017-2020 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<!-- Renoir Tempest resource overrides. Disable 5.4 controls absent from the shipped kernel. -->
+<ResourceConfigs>
+    <PerfResources>
+        <Config MajorValue="0x1" MinorValue="0x1" Supported="no" />
+        <Config MajorValue="0x1" MinorValue="0x3" Supported="no" Target="shima" />
+        <Config MajorValue="0x1" MinorValue="0x4" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x3" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0x6" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0xB" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0xC" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0xD" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0x13" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0x14" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0x17" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0x22" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x37" Supported="no" />
+        <Config MajorValue="0x3" MinorValue="0x39" Supported="no" />
+        <Config MajorValue="0x6" MinorValue="0x0" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x1" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x2" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x3" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x4" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x5" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x6" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x7" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x8" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0x9" Supported="no" Target="shima" />
+        <Config MajorValue="0xB" MinorValue="0x2" Node="/sys/devices/system/cpu/cpu_boost/input_boost_freq" />
+        <Config MajorValue="0xC" MinorValue="0x1" Supported="no" Target="shima" />
+        <Config MajorValue="0xC" MinorValue="0x2" Supported="no" Target="shima" />
+        <Config MajorValue="0xC" MinorValue="0x3" Supported="no" Target="shima" />
+        <Config MajorValue="0xC" MinorValue="0xA" Supported="no" Target="shima" />
+        <Config MajorValue="0xC" MinorValue="0xB" Supported="no" Target="shima" />
+        <Config MajorValue="0xD" MinorValue="0x1" Node="/sys/class/devfreq/18590100.qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil" />
+        <Config MajorValue="0xD" MinorValue="0x2" Node="/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil" />
+        <Config MajorValue="0xD" MinorValue="0x3" Node="/sys/class/devfreq/18590100.qcom,cpu0-cpu-l3-lat/mem_latency/stall_floor" />
+        <Config MajorValue="0xD" MinorValue="0x4" Node="/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/stall_floor" />
+        <Config MajorValue="0xD" MinorValue="0x11" Node="/sys/class/devfreq/18590100.qcom,cpu%d-cpu-l3-lat/max_freq" />
+        <Config MajorValue="0xD" MinorValue="0x5" Supported="no" Target="shima" />
+        <Config MajorValue="0xD" MinorValue="0x6" Supported="no" Target="shima" />
+        <Config MajorValue="0x1" MinorValue="0x2" Supported="no" Target="shima" />
+        <Config MajorValue="0x1" MinorValue="0x6" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x0" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x7" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x8" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x15" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x16" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x1A" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x1D" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x1E" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x1F" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x20" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x23" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x24" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x28" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x29" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x2A" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x2C" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x2D" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x2E" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x2F" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x32" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x33" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x34" Supported="no" Target="shima" />
+        <Config MajorValue="0x3" MinorValue="0x36" Supported="no" Target="shima" />
+        <Config MajorValue="0x4" MinorValue="0x0" Supported="no" Target="shima" />
+        <Config MajorValue="0x4" MinorValue="0x1" Supported="no" Target="shima" />
+        <Config MajorValue="0x4" MinorValue="0x2" Supported="no" Target="shima" />
+        <Config MajorValue="0x4" MinorValue="0x3" Supported="no" Target="shima" />
+        <Config MajorValue="0x4" MinorValue="0x4" Supported="no" Target="shima" />
+        <Config MajorValue="0x5" MinorValue="0xF" Supported="no" Target="shima" />
+        <Config MajorValue="0x5" MinorValue="0x10" Supported="no" Target="shima" />
+        <Config MajorValue="0x5" MinorValue="0x11" Supported="no" Target="shima" />
+        <Config MajorValue="0x5" MinorValue="0x12" Supported="no" Target="shima" />
+        <Config MajorValue="0x5" MinorValue="0x13" Supported="no" Target="shima" />
+        <Config MajorValue="0x6" MinorValue="0xA" Supported="no" Target="shima" />
+        <Config MajorValue="0xC" MinorValue="0x0" Supported="no" Target="shima" />
+        <Config MajorValue="0xC" MinorValue="0x4" Supported="no" Target="shima" />
+        <Config MajorValue="0xD" MinorValue="0x0" Supported="no" Target="shima" />
+    </PerfResources>
+</ResourceConfigs>

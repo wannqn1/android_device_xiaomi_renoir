@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/* Copyright (c) 2017-2020 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+<!-- Renoir Tempest profile. Filter out 5.4-only resources from the stock Shima boosts. -->
+<BoostConfigs>
+    <PerfBoost>
+        <Config Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="shima" Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x40CD4000, 0x12" />
+        <Config Id="0x00001082" Type="1" Enable="true" Timeout="600" Target="shima" Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0X42804000, 0x0" />
+        <Config Id="0x0000109C" Type="1" Enable="true" Timeout="0" Target="shima" Resources="0x40804000, 0xFFF, 0x40800000, 0xFFF, 0x42C10000, 0x1, 0x40CD4000, 0x12" />
+        <Config Id="0x00001081" Type="2" Enable="true" Timeout="1500" Target="shima" Resources="0x40400000, 0x1, 0x42C10000, 0x1, 0x4281C000, 1500" />
+        <Config Id="0x00001081" Type="3" Enable="false" Timeout="15000" Target="shima" Resources="" />
+        <Config Id="0x00001081" Type="4" Enable="false" Timeout="15000" Target="shima" Resources="" />
+        <Config Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="shima" Resources="0x40800000, 1209, 0x40800200, 1267" />
+        <Config Id="0x00001081" Type="103" Enable="false" Timeout="2000" Target="shima" Resources="" />
+        <Config Id="0x00001083" Enable="true" Timeout="400" Target="shima" Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+        <Config Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="60" Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094" />
+        <Config Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="90" Resources="0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766" />
+        <Config Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="120" Resources="0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862" />
+        <Config Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="144" Resources="0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862" />
+        <Config Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="60" Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094" />
+        <Config Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="90" Resources="0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766" />
+        <Config Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="120" Resources="0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862" />
+        <Config Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="144" Resources="0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862" />
+        <Config Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="shima" Fps="60" Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094" />
+        <Config Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="shima" Fps="90" Resources="0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766" />
+        <Config Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="shima" Fps="120" Resources="0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862" />
+        <Config Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="shima" Fps="144" Resources="0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862" />
+        <Config Id="0x00001086" Enable="true" Target="shima" Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 1497, 0x40800100, 1324, 0x40800200, 1766, 0x42C10000, 0x1" />
+        <Config Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="shima" Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094" />
+        <Config Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="shima" Fps="120" Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094" />
+        <Config Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="shima" Fps="144" Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094" />
+        <Config Id="0x00001088" Enable="true" Target="shima" Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x40400000, 1, 0x40CD4000, 0x12" />
+        <Config Id="0x00001089" Enable="true" Timeout="1500" Target="shima" Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+        <Config Id="0x00001090" Enable="true" Timeout="1000" Target="shima" Resources="0x40800100, 1324, 0x42804000, 0" />
+        <Config Id="0x00001041" Enable="true" Timeout="0" Target="shima" Resources="0x40000000, 1" />
+        <Config Id="0x00001040" Enable="true" Timeout="0" Target="shima" Resources="0x40000000, 0x0" />
+        <Config Id="0x0000109B" Type="60" Enable="false" Target="shima" Timeout="0" Resources="" />
+        <Config Id="0x0000109B" Type="90" Enable="false" Target="shima" Timeout="0" Resources="" />
+        <Config Id="0x0000109B" Type="120" Enable="false" Target="shima" Timeout="0" Resources="" />
+        <Config Id="0x0000109B" Type="144" Enable="true" Target="shima" Timeout="0" Resources="0x40800100, 806" />
+        <Config Id="0x00001094" Type="60" Enable="false" Target="shima" Timeout="0" Resources="" />
+        <Config Id="0x00001094" Type="90" Enable="false" Target="shima" Timeout="0" Resources="" />
+        <Config Id="0x00001094" Type="120" Enable="false" Target="shima" Timeout="0" Resources="" />
+        <Config Id="0x00001094" Type="144" Enable="true" Target="shima" Timeout="0" Resources="0x40800100, 806" />
+        <Config Id="0x00001098" Type="0" Enable="true" Target="shima" Timeout="2000" Resources="0x4281C000, 32, 0x41C0C000, 0" />
+        <Config Id="0x00001099" Type="0" Enable="true" Target="shima" Timeout="2000" Resources="0x4281C000, 32" />
+        <Config Id="0x0000109A" Type="0" Enable="true" Target="shima" Timeout="2000" Resources="0x41C0C000, 0" />
+        <Config Id="0x00001097" Type="0" Enable="true" Timeout="7" Target="shima" Fps="144" Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
+    </PerfBoost>
+</BoostConfigs>
