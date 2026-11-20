@@ -9,15 +9,12 @@ $(call inherit-product, device/xiaomi/renoir/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-TARGET_OPTIMIZED_DEXOPT := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := renoir
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2101K9R
 PRODUCT_NAME := lineage_renoir
-PRODUCT_MAINTAINER := Failedmush
+PRODUCT_MAINTAINER := wannq
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="renoir_global-user 13 TKQ1.220829.002 V14.0.7.0.TKIMIXM release-keys" \
