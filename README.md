@@ -46,7 +46,7 @@ m -j2 bacon
 ```
 
 The manifest supplies the vendor blobs and firmware and the matched
-kernel Image, DTB, DTBO, and 308 modules. Build output goes to
+kernel Image, DTB, DTBO, and matching modules. Build output goes to
 `out/target/product/renoir/`.
 
 Kernel sources are available in the [Shima kernel](https://github.com/wannqn1/android_kernel_xiaomi_sm7350),
