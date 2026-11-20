@@ -6,6 +6,7 @@
 DEVICE_PATH := device/xiaomi/renoir
 
 TARGET_RENOIR_KERNEL_618 := true
+$(call soong_config_set_bool,xiaomi_sm8350,use_renoir_ssccalapi,true)
 
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
