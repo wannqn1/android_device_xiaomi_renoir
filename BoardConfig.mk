@@ -19,8 +19,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
 
 # The kernel builder deposits a matched set here.
 RENOIR_KERNEL_PREBUILTS := device/xiaomi/renoir-kernel-6.18
-# Export the matched UAPI to Qualcomm HALs through LineageOS's headers_install rule.
-TARGET_KERNEL_SOURCE := $(RENOIR_KERNEL_PREBUILTS)/headers
+$(call soong_config_set_bool,xiaomi_sm8350,use_renoir_uapi_headers,true)
 TARGET_KERNEL_VERSION := 6.18
 TARGET_NO_KERNEL_OVERRIDE := true
 BOARD_PREBUILT_DTBOIMAGE := $(RENOIR_KERNEL_PREBUILTS)/dtbo.img

@@ -1,0 +1,36 @@
+--- a/build/soong/Android.bp
++++ b/build/soong/Android.bp
+@@ -92,12 +92,28 @@
+     pluginFor: ["soong_build"],
+ }
+-
++
+-cc_defaults {
++soong_config_module_type {
++    name: "xiaomi_kernel_header_defaults",
++    module_type: "cc_defaults",
++    config_namespace: "xiaomi_sm8350",
++    bool_variables: ["use_renoir_uapi_headers"],
++    properties: ["generated_headers", "export_generated_headers"],
++}
++
++xiaomi_kernel_header_defaults {
+     name: "generated_kernel_header_defaults",
+-    generated_headers: ["generated_kernel_includes"],
+-    export_generated_headers: ["generated_kernel_includes"],
+     vendor_available: true,
+     recovery_available: true,
++    soong_config_variables: {
++        use_renoir_uapi_headers: {
++            generated_headers: ["renoir_kernel_uapi"],
++            export_generated_headers: ["renoir_kernel_uapi"],
++            conditions_default: {
++                generated_headers: ["generated_kernel_includes"],
++                export_generated_headers: ["generated_kernel_includes"],
++            },
++        },
++    },
+ }
+-
++
+ cc_defaults {
