@@ -15,6 +15,8 @@ apply_renoir_build_patch "$DEVICE_PATH/../../../vendor/lineage" \
     0003-Use-the-declared-Renoir-UAPI-outputs.patch || return 1
 apply_renoir_build_patch "$DEVICE_PATH/../../../hardware/qcom-caf/sm8350/display" \
     0004-gralloc-Include-the-Qualcomm-DRM-modifiers.patch || return 1
+apply_renoir_build_patch "$DEVICE_PATH/../../../vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" \
+    0005-ipacm-Use-Bionic-sockaddr-storage.patch || return 1
 
 # Apply 4G Icon patch to frameworks/base
 if [ ! -f "$FW_BASE/.patch_applied_4g_icon" ]; then
