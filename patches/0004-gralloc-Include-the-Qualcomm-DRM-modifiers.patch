@@ -1,0 +1,16 @@
+--- a/gralloc/gr_utils.cpp
++++ b/gralloc/gr_utils.cpp
+@@ -32,6 +32,11 @@
+ #endif
+-
++
+ #include <drm/drm_fourcc.h>
++
++#if !defined(DRM_FORMAT_MOD_QCOM_TILE) || !defined(DRM_FORMAT_MOD_QCOM_DX) || \
++    !defined(DRM_FORMAT_MOD_QCOM_TIGHT)
++#include <display/drm/sde_drm.h>
++#endif
+-
++
+ #include <cutils/properties.h>
+ #include <algorithm>
